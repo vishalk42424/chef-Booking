@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Payment Options</title>
+
+<!-- CSS File -->
+<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Select Payment Method</h2>
+    <p>Complete your booking by choosing a payment option.</p>
+
+    <!-- Google Pay -->
+    <div class="pay-box" onclick="redirectTo('https://gpay.app.goo.gl/')">
+        <img src="images/gpay.png">
+        <p>Google Pay</p>
+    </div>
+
+    <!-- PhonePe -->
+    <div class="pay-box" onclick="redirectTo('https://www.phonepe.com/')">
+        <img src="images/phonepay.png">
+        <p>PhonePe</p>
+    </div>
+
+    <!-- Paytm -->
+    <div class="pay-box" onclick="redirectTo('https://paytm.com/')">
+        <img src="images/paytm.png">
+        <p>Paytm</p>
+    </div>
+
+    <!-- QR -->
+    <div class="pay-box" onclick="showQR()">
+        <img src="https://cdn-icons-png.flaticon.com/512/714/714390.png">
+        <p>Scan QR & Pay</p>
+    </div>
+
+    <!-- Card -->
+    <div class="pay-box" onclick="redirectTo('card-payment.html')">
+        <img src="https://cdn-icons-png.flaticon.com/512/196/196561.png">
+        <p>Credit / Debit Card</p>
+    </div>
+
+    <!-- QR Box -->
+    <div class="qr-box" id="qrBox">
+        <h3>Scan & Pay (UPI)</h3>
+        <img src="images/qr.jpg" width="220">
+        <p>Use any UPI app to complete the payment</p>
+    </div>
+
+    <button class="back" onclick="goBack()">Back</button>
+</div>
+
+<!-- JS File -->
+<script src="script.js"></script>
+
+</body>
+</html>

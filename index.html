@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chef & Maid Booking</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <h1 class="logo">Chef<span>&</span>Maid</h1>
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#chefs">Chefs</a></li>
+        <li><a href="#maids">Maids</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <button id="mode-toggle" class="mode-btn">🌙</button>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h2>Book Expert Chefs & Professional Maids</h2>
+      <p class="typing-text"></p>
+      <div class="hero-buttons">
+        <a href="#chefs" class="btn">Book a Chef</a>
+        <a href="#maids" class="btn-outline">Hire a Maid</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chefs Section -->
+  <section id="chefs" class="section">
+    <h2 class="section-title">Our Expert Chefs 👨‍🍳</h2>
+    <div>
+      <h3>INDIAN Cuisine</h3>
+      <div class="card-container">
+        <!-- 8 chefs -->
+        <div class="card">
+          <img src="images/indian/i1.png" alt="Chef Arjun">
+          <h3>Chef Arjun</h3>
+          <p>⭐<b>4.9</b> (105 reviews)</p>
+          <P>🎖️8 (year)</p>
+          <H4>₹7200 /Event</H4> <button onclick="openChefBooking('Chef Arjun', 7200)" class="book">BOOK NOW</button>
+        </div>
+        <div class="card">
+          <img src="images/indian/i2.png" alt="Chef Priya">
+          <h3>Chef Priya</h3>
+          <p>⭐<b>4.7</b> (87 reviews)</p>
+          <P>🎖️6 (year)</p>
+          <H4>₹6800 /Event</H4> <button onclick="openChefBooking('Chef Priya', 6800)" class="book">BOOK NOW</button>
+        </div>
+        <div class="card">
+          <img src="images/indian/i4.png" alt="Chef Raj">
+          <h3>Chef Raj</h3>
+          <p>⭐<b>4.6</b> (165 reviews)</p>
+          <P>🎖️9 (year)</p>
+          <H4>₹7100 /Event</H4> <button onclick="openChefBooking('Chef Raj', 7100)" class="book">BOOK NOW</button>
+        </div>
+        <div class="card">
+          <img src="images/indian/i5.png" alt="Chef Aditya">
+          <h3>Chef Aditya</h3>
+          <p>⭐<b>4.2</b> (98 reviews)</p>
+          <P>🎖️6 (year)</p>
+          <H4>₹6100 /Event</H4> <button onclick="openChefBooking('Chef Aditya', 6100)" class="book">BOOK NOW</button>
+        </div>
+        <div class="card">
+          <img src="images/indian/i6.png" alt="Chef Anjali">
+          <h3>Chef Anjali</h3>
+          <p>⭐<b>4.4</b> (78 reviews)</p>
+          <P>🎖️5 (year)</p>
+          <H4>₹5800 /Event</H4> <button onclick="openChefBooking('Chef Anjali', 5800)" class="book">BOOK NOW</button>
+        </div>
+        <div class="card">
+          <img src="images/indian/i3.png" alt="Chef Anita">
+          <h3>Chef Anita</h3>
+          <p>⭐<b>4.7</b> (1105 reviews)</p>
+          <P>🎖️12 (year)</p>
+          <H4>₹8200 /Event</H4> <button onclick="openChefBooking('Chef Anita', 8200)" class="book">BOOK NOW</button>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h3>CHINESE Cuisine</h3>
+      <div class="card-container">
+        <!-- 8 chefs -->
+        <div class="card">
+          <img src="images/chinese/c1.png" alt="Chef Li Wei">
+          <h3>Chef Li Wei</h3>
+          <p>⭐<b>4.8</b> (113 reviews)</p>
+          <P>🎖️8 (year)</p>
+          <H4>₹7100 /Event</H4> <button onclick="openChefBooking('Chef Li Wei', 7100)" class="book">BOOK NOW</button>
+        </div>
+        <div class="card">
+          <img src="images/chinese/c2.png" alt="Chef Chen Ming">
+          <h3>Chef Chen Ming</h3>
+          <p>⭐<b>4.6</b> (119 reviews)</p>
+          <P>🎖️12 (year)</p>
+          <H4>₹7800 /Event</H4> <button onclick="openChefBooking('Chef Chen Ming', 7800)" class="book">BOOK NOW</button>
+        </div>
+        <div class="card">
+          <img src="images/chinese/c3.png" alt="Chef Zhang Lily">
+          <h3>Chef Zhang Lily</h3>
+          <p>⭐<b>4.8</b> (103 reviews)</p>
+          <P>🎖️8 (year)</p>
+          <H4>₹6500 /Event</H4> <button onclick="openChefBooking('Chef Zhang Lily', 6500)" class="book">BOOK NOW</button>
+        </div>
+        <div class="card">
+          <img src="images/chinese/c4.png" alt="Chef Wang Jun">
+          <h3>Chef Wang Jun</h3>
+          <p>⭐<b>4.4</b> (105 reviews)</p>
+          <P>🎖️7 (year)</p>
+          <H4>₹5900 /Event</H4> <button onclick="openChefBooking('Chef Wang Jun', 5900)" class="book">BOOK NOW</button>
+        </div>
+        <div class="card">
+          <img src="images/chinese/c5.png" alt="Chef Huang Mei">
+          <h3>Chef Huang Mei</h3>
+          <p>⭐<b>4.6</b> (78 reviews)</p>
+          <P>🎖️6 (year)</p>
+          <H4>₹5200 /Event</H4> <button onclick="openChefBooking('Chef Huang Mei', 5200)" class="book">BOOK NOW</button>
+        </div>
+        <div class="card">
+          <img src="images/chinese/c6.png" alt="Chef Liu Xiao">
+          <h3>Chef Liu Xiao</h3>
+          <p>⭐<b>4.5</b> (88 reviews)</p>
+          <P>🎖️8 (year)</p>
+          <H4>₹5700 /Event</H4> <button onclick="openChefBooking('Chef Liu Xiao', 5700)" class="book">BOOK NOW</button>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h3>JAPANESE Cuisine</h3>
+      <div class="card-container">
+        <!-- 8 chefs -->
+        <div class="card">
+          <img src="images/japanese/j1.png" alt="Chef Takeshi Yamamoto">
+          <h3>Chef Takeshi Yamamoto</h3>
+          <p>⭐<b>4.6</b> (99 reviews)</p>
+          <P>🎖️8 (year)</p>
+          <H4>₹8200 /Event</H4> <button onclick="openChefBooking('Chef Takeshi Yamamoto', 8200)" class="book">BOOK NOW</button>
+        </div>
+        <div class="card">
+          <img src="images/japanese/j2.png" alt="Chef Yuki Tanaka">
+          <h3>Chef Yuki Tanaka</h3>
+          <p>⭐<b>4.7</b> (83 reviews)</p>
+          <P>🎖️7 (year)</p>
+          <H4>₹7900 /Event</H4> <button onclick="openChefBooking('Chef Yuki Tanaka', 7900)" class="book">BOOK NOW</button>
+        </div>
+        <div class="card">
+          <img src="images/japanese/j6.png" alt="Chef Sakura Kobayashi">
+          <h3>Chef Sakura Kobayashi</h3>
+          <p>⭐<b>4.5</b> (91 reviews)</p>
+          <P>🎖️9 (year)</p>
+          <H4>₹8100 /Event</H4> <button onclick="openChefBooking('Chef Sakura Kobayashi', 8100)" class="book">BOOK NOW</button>
+        </div>
+        <div class="card">
+          <img src="images/japanese/j4.png" alt="Chef Hiroshi Sato">
+          <h3>Chef Hiroshi Sato</h3>
+          <p>⭐<b>4.2</b> (77 reviews)</p>
+          <P>🎖️5 (year)</p>
+          <H4>₹6700 /Event</H4> <button onclick="openChefBooking('Chef Hiroshi Sato', 6700)" class="book">BOOK NOW</button>
+        </div>
+        <div class="card">
+          <img src="images/japanese/j5.png" alt="Chef Aiko Watanabe">
+          <h3>Chef Aiko Watanabe</h3>
+          <p>⭐<b>4.4</b> (67 reviews)</p>
+          <P>🎖️6 (year)</p>
+          <H4>₹6300 /Event</H4> <button onclick="openChefBooking('Chef Aiko Watanabe', 6300)" class="book">BOOK NOW</button>
+        </div>
+        <div class="card">
+          <img src="images/japanese/j3.png" alt="Chef Hana Suzuki">
+          <h3>Chef Hana Suzuki</h3>
+          <p>⭐<b>4.7</b> (118 reviews)</p>
+          <P>🎖️7 (year)</p>
+          <H4>₹6600 /Event</H4> <button onclick="openChefBooking('Chef Hana Suzuki', 6600)" class="book">BOOK NOW</button>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+  <!-- Maids Section -->
+  <section id="maids" class="section">
+    <h2 class="section-title">Trusted Maids 🧹</h2>
+    <div class="card-container">
+      <div class="card">
+        <img src="images/maids/m1.png" alt="Maid Anjali">
+        <h3>Maid Anjali</h3>
+        <p>⭐<b>4.7</b> (67views)</p>
+          <P>🎖️8 (year)</p>
+          <H4>₹800 /hour</H4> <button onclick="openMaidBooking('Chef Anjali', 800)" class="book">BOOK NOW</button>
+      </div>
+      <div class="card">
+        <img src="images/maids/m2.png" alt="Maid dai">
+        <h3>Maid dai</h3>
+        <p>⭐<b>4.9</b> (165 reviews)</p>
+          <P>🎖️6 (year)</p>
+          <H4>₹1200 /hour</H4> <button onclick="openMaidBooking('Chef dai', 1200)" class="book">BOOK NOW</button>
+          
+      </div>
+      <div class="card">
+        <img src="images/maids/m3.png" alt="Maid Manisha">
+        <h3>Maid Manisha</h3>
+        <p>⭐<b>4.5</b> (55 reviews)</p>
+          <P>🎖️5 (year)</p>
+          <H4>₹700 /hour</H4> <button onclick="openMaidBooking('Chef Manisha', 700)" class="book">BOOK NOW</button>
+      </div>
+      <div class="card">
+        <img src="images/maids/m4.png" alt="Maid Rupmani">
+        <h3>Maid Rupmani</h3>
+        <p>⭐<b>4.6</b> (109 reviews)</p>
+          <P>🎖️9 (year)</p>
+          <H4>₹800 /hour</H4> <button onclick="openMaidBooking('Chef Rupmani', 800)" class="book">BOOK NOW</button>
+      </div>
+      <div class="card">
+        <img src="images/maids/m5.png" alt="Maid angel">
+        <h3>Maid angel</h3>
+        <p>⭐<b>4.1</b> (32 reviews)</p>
+          <P>🎖️2 (year)</p>
+          <H4>₹800 /hour</H4> <button onclick="openMaidBooking('Chef angel', 800)" class="book">BOOK NOW</button>
+      </div>
+      <div class="card">
+        <img src="images/maids/m6.png" alt="Maid Rupali">
+        <h3>Maid Rupali</h3>
+        <p>⭐<b>4.9</b> (105 reviews)</p>
+          <P>🎖️3 (year)</p>
+          <H4>₹600 /hour</H4> <button onclick="openMaidBooking('Chef Rupali',600)" class="book">BOOK NOW</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chef Booking Modal -->
+  <div id="chef-booking" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeChefBooking()">&times;</span>
+      <h3 id="chef-booking-title"></h3>
+      <label>Date:</label>
+      <input type="date" id="chef-date" />
+      <label>Time:</label>
+      <input type="time" id="chef-time" />
+      <label>Special Requirements (optional):</label>
+      <textarea id="chef-notes" placeholder="Write any special requirements..." rows="3"></textarea>
+
+      <button class="btn" onclick="proceedChefPayment()">Proceed to Payment</button>
+    </div>
+  </div>
+
+  <!-- Maid Booking Modal -->
+  <div id="maid-booking" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeMaidBooking()">&times;</span>
+      <h3 id="maid-booking-title"></h3>
+      <label>Date:</label>
+      <input type="date" id="maid-date" />
+      <label>Time:</label>
+      <input type="time" id="maid-time" />
+      <label>Special Requirements (optional):</label>
+      <textarea id="maid-notes" placeholder="Write any special requirements..." rows="3"></textarea>
+
+      <button class="btn" onclick="proceedMaidPayment()">Proceed to Payment</button>
+    </div>
+  </div>
+
+  <!-- Confirmation Popup -->
+  <div id="confirmation" class="modal">
+    <div class="modal-content">
+      <h3>Booking Confirmed 🎉</h3>
+      <p>Your booking has been successfully placed.</p>
+      <button class="btn" onclick="closeConfirm()">Close</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <p>© 2025 Chef & Maid Booking | Designed by Vishal</p>
+      <p class="social">
+      <button class="linkedin">
+        <a href="https://www.linkedin.com/in/vishal-kumar-saw-514a942b8/">
+          <img src="images/wired-flat-2632-logo-circle-linkedin-hover-pinch.svg" alt="">
+        </a>
+      </button>
+        <button class="github">
+        <a href="https://github.com/vishalk42424">
+          <img src="images/wired-flat-2572-logo-github-hover-pinch.svg" alt="">
+        </a>
+      </button>
+    </p>
+     
+    
+  
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
