@@ -22,7 +22,7 @@ function typeSingle() {
 
   if (index > text.length) {
     index = 0; // restart typing
-    setTimeout(typeSingle, 1); 
+    setTimeout(typeSingle, 1);
   } else {
     setTimeout(typeSingle, 50);
   }
@@ -30,17 +30,18 @@ function typeSingle() {
 
 typeSingle();
 
-
-
-
 // Chef booking
 let chefName = "";
 let chefPrice = 0;
 
+//
+
 function openChefBooking(name, price) {
   chefName = name;
   chefPrice = price;
-  document.getElementById("chef-booking-title").innerText = `Booking ${name} (₹${price}/Event)`;
+  document.getElementById(
+    "chef-booking-title"
+  ).innerText = `Booking ${name} (₹${price}/Event)`;
   document.getElementById("chef-booking").style.display = "flex";
 }
 function closeChefBooking() {
@@ -67,7 +68,9 @@ let maidPrice = 0;
 function openMaidBooking(name, price) {
   maidName = name;
   maidPrice = price;
-  document.getElementById("maid-booking-title").innerText = `Booking ${name} (₹${price}/hour)`;
+  document.getElementById(
+    "maid-booking-title"
+  ).innerText = `Booking ${name} (₹${price}/hour)`;
   document.getElementById("maid-booking").style.display = "flex";
 }
 function closeMaidBooking() {
@@ -87,6 +90,32 @@ function proceedMaidPayment() {
   }, 2000);
 }
 
+// Payment_card options
+
+function processCardPayment() {
+  const bank = document.getElementById("bank").value;
+  const cardNumber = document.getElementById("card-number").value.trim();
+  const name = document.getElementById("card-name").value.trim();
+  const expiry = document.getElementById("expiry").value;
+  const cvv = document.getElementById("cvv").value;
+
+  if (!bank || !cardNumber || !name || !expiry || !cvv) {
+    alert("Please fill all details!");
+    return;
+  }
+
+  if (cardNumber.length < 16) {
+    alert("Invalid Card Number");
+    return;
+  }
+
+  if (cvv.length < 3) {
+    alert("Invalid CVV");
+    return;
+  }
+  document.getElementById("confirmation").style.display = "flex";
+}
+
 // Confirmation popup
 function closeConfirm() {
   document.getElementById("confirmation").style.display = "none";
@@ -95,34 +124,34 @@ function closeConfirm() {
 let selectedPayment = "";
 
 function selectPayment(method) {
-    selectedPayment = method;
-    document.getElementById("selected-text").innerText = "Selected: " + method;
+  selectedPayment = method;
+  document.getElementById("selected-text").innerText = "Selected: " + method;
 }
 
 function confirmPayment() {
-    if (selectedPayment === "") {
-        alert("Please select a payment method!");
-        return;
-    }
+  if (selectedPayment === "") {
+    alert("Please select a payment method!");
+    return;
+  }
 
-    document.getElementById("payment-popup").style.display = "flex";
+  document.getElementById("payment-popup").style.display = "flex";
 }
 
 function closePopup() {
-    document.getElementById("payment-popup").style.display = "none";
+  document.getElementById("payment-popup").style.display = "none";
 
-    // Redirect back to home page
-    window.location.href = "index.html";
+  // Redirect back to home page
+  window.location.href = "index.html";
 }
 
 function redirectTo(link) {
-    window.location.href = link;
+  window.location.href = link;
 }
 
 function showQR() {
-    document.getElementById("qrBox").style.display = "block";
+  document.getElementById("qrBox").style.display = "block";
 }
 
 function goBack() {
-    window.history.back();
+  window.history.back();
 }

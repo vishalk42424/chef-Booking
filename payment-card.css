@@ -1,0 +1,79 @@
+/* PAYMENT CARD OPTION */
+body {
+    background: #f0f0f0;
+    font-family: Poppins, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.payment-container {
+    background: #fff;
+    width: 400px;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    border-top: 4px solid #ff7b00;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.card-type {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: 600;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #bbb;
+    margin-top: 5px;
+}
+
+.row {
+    display: flex;
+    gap: 15px;
+}
+
+.small input {
+    width: 100%;
+}
+
+.save-card {
+    margin-top: 5px;
+    display: block;
+}
+
+.pay-btn {
+    width: 100%;
+    padding: 12px;
+    background: #ff7b00;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.pay-btn:hover {
+    background: #e96f00;
+}

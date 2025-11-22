@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Payment</title>
+    <link rel="stylesheet" href="payment-card.css">
+</head>
+<body>
+
+<div class="payment-container">
+    <h2>Card Payment</h2>
+
+    <!-- Card Type -->
+    <div class="card-type">
+        <label><input type="radio" name="type" checked> Credit Card</label>
+        <label><input type="radio" name="type"> Debit Card</label>
+    </div>
+
+    <!-- Select Bank -->
+    <div class="input-group">
+        <label>Select Bank</label>
+        <select id="bank">
+            <option value="">-- Choose Your Bank --</option>
+            <option>SBI</option>
+            <option>Axis Bank</option>
+            <option>ICICI Bank</option>
+            <option>HDFC Bank</option>
+            <option>Canara Bank</option>
+            <option>Punjab National Bank</option>
+            <option>Kotak Mahindra Bank</option>
+        </select>
+    </div>
+
+    <!-- Card Number -->
+    <div class="input-group">
+        <label>Card Number</label>
+        <input type="text" maxlength="16" placeholder="1234 5678 9012 3456" id="card-number">
+    </div>
+
+    <!-- Name -->
+    <div class="input-group">
+        <label>Card Holder Name</label>
+        <input type="text" placeholder="Enter full name" id="card-name">
+    </div>
+
+    <!-- Expiry & CVV -->
+    <div class="row">
+        <div class="input-group small">
+            <label>Expiry Date</label>
+            <input type="month" id="expiry">
+        </div>
+
+        <div class="input-group small">
+            <label>CVV</label>
+            <input type="password" maxlength="3" placeholder="***" id="cvv">
+        </div>
+    </div>
+
+    <label class="save-card">
+        <input type="checkbox"> Save this card for future payments
+    </label>
+
+    <button id="pay-btn" class="pay-btn" onclick="processCardPayment()">Proceed to Pay</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
